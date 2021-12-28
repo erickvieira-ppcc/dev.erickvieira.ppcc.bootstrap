@@ -1,0 +1,44 @@
+version: '3.7'
+services:
+  ppcc-user-postgres:
+    container_name: ppcc-user-postgres
+    environment:
+      - POSTGRES_PASSWORD=ppcc
+      - POSTGRES_USER=ppcc
+      - POSTGRES_DB=user_db
+    network_mode: redelocal
+    ports:
+      - '5432:5432'
+    image: postgres:13.2-alpine
+  ppcc-wallet-postgres:
+    container_name: ppcc-wallet-postgres
+    environment:
+      - POSTGRES_PASSWORD=ppcc
+      - POSTGRES_USER=ppcc
+      - POSTGRES_DB=wallet_db
+    network_mode: redelocal
+    ports:
+      - '5433:5432'
+    image: postgres:13.2-alpine
+  ppcc-banking-postgres:
+    container_name: ppcc-banking-postgres
+    environment:
+      - POSTGRES_PASSWORD=ppcc
+      - POSTGRES_USER=ppcc
+      - POSTGRES_DB=banking_db
+    network_mode: redelocal
+    ports:
+      - '5434:5432'
+    image: postgres:13.2-alpine
+  ppcc-rabbitmq:
+    container_name: ppcc-rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=ppcc
+      - RABBITMQ_DEFAULT_PASS=ppcc
+    ports:
+      - '5672:5672'
+    image: 'rabbitmq:3'
+
+networks:
+  default:
+    driver: bridge
