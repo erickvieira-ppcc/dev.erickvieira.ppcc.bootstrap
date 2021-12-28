@@ -73,7 +73,7 @@ As aplicações `user-service` e `wallet-service` contam com testes unitários q
 
 É possível rodar os testes unitários com o comando `gradle test` na IDE ou pela CLI usando `./gradlew test`.
 
-O report pode ser aberto consultado no seguinte path:
+O report pode ser consultado no seguinte path:
 - build/reports/tests/test/index.html
 
 #### Test report da aplicação `user-service`
@@ -87,7 +87,7 @@ Além dos testes unitários convencionais, as aplicações `user-service` e `wal
 
 É possível rodar os testes mutantes com o comando `gradle pitest` na IDE ou pela CLI usando `./gradlew pitest`.
 
-O report pode ser aberto consultado no seguinte path:
+O report pode ser consultado no seguinte path:
 - build/reports/tests/pitest/<< TIMESTAMP >>/index.html
 
 #### PIT test report da aplicação `user-service`
@@ -101,7 +101,7 @@ A única aplicação que conta com testes integrados é a `banking-service`.
 
 É possível rodar os testes integrados com o comando `gradle test` na IDE ou pela CLI usando `./gradlew test`.
 
-O report pode ser aberto consultado no seguinte path:
+O report pode ser consultado no seguinte path:
 - build/reports/tests/test/index.html
 
 #### Integrated test report da aplicação `banking-service`
