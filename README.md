@@ -33,7 +33,7 @@ Após clonar todos eles, certifique-se de que os containeres estão rodando e at
 3. Execute a plicação `dev.erickvieira.ppcc.api.gateway` (opicional)
 4. Execute as demais aplicações
 
-> Atenção: executar as aplicações em uma ordem diferente pode resultar em erros. Se realmente quiser rodar apenas os serviços de regra de negócio, sobrescreva as variáveis de ambiente para pular as etapas de de configuração, discovery e load balancing do Spring Cloud, sobrescreva as variáveis de ambiente seguindo [este](https://github.com/erickvieira-ppcc/dev.erickvieira.ppcc.service.banking/blob/main/src/main/resources/application-test.properties) exemplo.
+> Atenção: executar as aplicações em uma ordem diferente pode resultar em erros. Se realmente quiser rodar apenas os serviços de regra de negócio, sobrescreva as variáveis de ambiente para pular as etapas de configuração, discovery, roteamento e load balancing do Spring Cloud, sobrescreva as variáveis de ambiente seguindo [este](https://github.com/erickvieira-ppcc/dev.erickvieira.ppcc.service.banking/blob/main/src/main/resources/application-test.properties) exemplo.
 
 Caso opte por rodar o `api.gateway` as aplicações que subirem em seguida firacam disponíveis nas seguintes URLs:
 - http://localhost:8080/user-service/swagger-ui/
