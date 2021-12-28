@@ -109,5 +109,5 @@ O report pode ser consultado no seguinte path:
 
 ---
 
-Em caso de dúvias, favor contate por e-mail:
+Em caso de dúvidas, favor contate por e-mail:
 - erick-vieira-s@outlook.com
