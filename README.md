@@ -30,7 +30,7 @@ Para prosseguir, clone os seguintes repositórios:
 Após clonar todos eles, certifique-se de que os containeres estão rodando e atente-se para a seguinte ordem:
 1. Execute a aplicação `dev.erickvieira.ppcc.config.server`
 2. Execute a aplicação `dev.erickvieira.ppcc.service.discovery`
-3. Execute a plicação `dev.erickvieira.ppcc.api.gateway` (opicional)
+3. Execute a aplicação `dev.erickvieira.ppcc.api.gateway` (opicional)
 4. Execute as demais aplicações
 
 > Atenção: executar as aplicações em uma ordem diferente pode resultar em erros. Se realmente quiser rodar apenas os serviços de regra de negócio, sobrescreva as variáveis de ambiente para pular as etapas de configuração, discovery, roteamento e load balancing do Spring Cloud, sobrescreva as variáveis de ambiente, tal qual foi feito na [application.properties do banking-service](https://github.com/erickvieira-ppcc/dev.erickvieira.ppcc.service.banking/blob/main/src/main/resources/application-test.properties) para viabilizar a execução do TestContainers.
