@@ -9,11 +9,11 @@ docker network create ppcc_default --driver=bridge
 
 docker run -d --hostname ppcc-rabbitmq --name ppcc-rabbitmq -e RABBITMQ_DEFAULT_USER=ppcc -e RABBITMQ_DEFAULT_PASS=ppcc -p 5672:5672 rabbitmq:3  
 
-docker run --name ppcc-user-postgres -e POSTGRES_PASSWORD=ppcc -e POSTGRES_USER=ppcc -e POSTGRES_DB=user_db --network redelocal -p 5434:5432 -d postgres:13.5
+docker run --name ppcc-user-postgres -e POSTGRES_PASSWORD=ppcc -e POSTGRES_USER=ppcc -e POSTGRES_DB=user_db --network ppcc_default -p 5434:5432 -d postgres:13.5
 
-docker run --name ppcc-wallet-postgres -e POSTGRES_PASSWORD=ppcc -e POSTGRES_USER=ppcc -e POSTGRES_DB=wallet_db --network redelocal -p 5434:5432 -d postgres:13.5
+docker run --name ppcc-wallet-postgres -e POSTGRES_PASSWORD=ppcc -e POSTGRES_USER=ppcc -e POSTGRES_DB=wallet_db --network ppcc_default -p 5434:5432 -d postgres:13.5
 
-docker run --name ppcc-banking-postgres -e POSTGRES_PASSWORD=ppcc -e POSTGRES_USER=ppcc -e POSTGRES_DB=banking_db --network redelocal -p 5434:5432 -d postgres:13.5
+docker run --name ppcc-banking-postgres -e POSTGRES_PASSWORD=ppcc -e POSTGRES_USER=ppcc -e POSTGRES_DB=banking_db --network ppcc_default -p 5434:5432 -d postgres:13.5
 ```
 
 ## Execução
