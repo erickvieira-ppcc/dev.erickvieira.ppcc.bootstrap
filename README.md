@@ -90,19 +90,19 @@ Além dos testes unitários convencionais, as aplicações `user-service` e `wal
 O report pode ser aberto consultado no seguinte path:
 - build/reports/tests/pitest/<< TIMESTAMP >>/index.html
 
-#### Pitest report da aplicação `user-service`
+#### PIT test report da aplicação `user-service`
 ![](user-service-mutation-tests-report.png)
-#### Pitest report da aplicação `wallet-service`
+#### PIT test report da aplicação `wallet-service`
 ![](wallet-service-mutation-tests-report.png)
 
 ### Testes integrados  
 
 A única aplicação que conta com testes integrados é a `banking-service`.  
 
-É possível rodar os testes mutantes com o comando `gradle pitest` na IDE ou pela CLI usando `./gradlew pitest`.
+É possível rodar os testes integrados com o comando `gradle test` na IDE ou pela CLI usando `./gradlew test`.
 
 O report pode ser aberto consultado no seguinte path:
-- build/reports/tests/pitest/<< TIMESTAMP >>/index.html
+- build/reports/tests/test/index.html
 
 #### Integrated test report da aplicação `banking-service`
 ![](banking-service-integrated-tests-report.png)
