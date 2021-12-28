@@ -35,7 +35,7 @@ Após clonar todos eles, certifique-se de que os containeres estão rodando e at
 
 > Atenção: executar as aplicações em uma ordem diferente pode resultar em erros. Se realmente quiser rodar apenas os serviços de regra de negócio, sobrescreva as variáveis de ambiente para pular as etapas de configuração, discovery, roteamento e load balancing do Spring Cloud, tal qual foi feito na [application.properties do banking-service](https://github.com/erickvieira-ppcc/dev.erickvieira.ppcc.service.banking/blob/main/src/main/resources/application-test.properties) para viabilizar a execução do TestContainers.
 
-Caso opte por rodar o `api.gateway` as aplicações que subirem em seguida firacam disponíveis nas seguintes URLs:
+Caso opte por rodar o `api.gateway` as aplicações que subirem em seguida estarão disponíveis nas seguintes URLs:
 - http://localhost:8080/user-service/swagger-ui/
 - http://localhost:8080/wallet-service/swagger-ui/
 - http://localhost:8080/banking-service/swagger-ui/
