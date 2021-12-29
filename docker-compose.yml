@@ -6,7 +6,7 @@ services:
       - POSTGRES_PASSWORD=ppcc
       - POSTGRES_USER=ppcc
       - POSTGRES_DB=user_db
-    network_mode: redelocal
+    network_mode: bridge
     ports:
       - '5432:5432'
     image: postgres:13.2-alpine
@@ -16,7 +16,7 @@ services:
       - POSTGRES_PASSWORD=ppcc
       - POSTGRES_USER=ppcc
       - POSTGRES_DB=wallet_db
-    network_mode: redelocal
+    network_mode: bridge
     ports:
       - '5433:5432'
     image: postgres:13.2-alpine
@@ -26,7 +26,7 @@ services:
       - POSTGRES_PASSWORD=ppcc
       - POSTGRES_USER=ppcc
       - POSTGRES_DB=banking_db
-    network_mode: redelocal
+    network_mode: bridge
     ports:
       - '5434:5432'
     image: postgres:13.2-alpine
